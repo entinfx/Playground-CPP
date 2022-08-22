@@ -13,7 +13,7 @@ void fileio() {
 
     /* Write */
     std::string spaceOddity = "Ground Control to Major Tom.";
-    std::ofstream writer("/Users/konstantinshatalov/Developer/c_cpp_playgrounds/cpp_playground/cpp_playground/file.txt", std::ios::trunc);
+    std::ofstream writer("path", std::ios::trunc);
     if (writer) {
         writer << spaceOddity << std::endl;
         writer.close();
@@ -23,7 +23,7 @@ void fileio() {
 
     // Append:
     std::string spaceOddity2 = "Take your protein pills and put your helmet on.";
-    std::ofstream writer2("/Users/konstantinshatalov/Developer/c_cpp_playgrounds/cpp_playground/cpp_playground/file.txt", std::ios::app);
+    std::ofstream writer2("path", std::ios::app);
     if (writer2) {
         writer2 << spaceOddity2 << std::endl;
         writer2.close();
@@ -33,7 +33,7 @@ void fileio() {
 
     /* Read */
     char character;
-    std::ifstream reader("/Users/konstantinshatalov/Developer/c_cpp_playgrounds/cpp_playground/cpp_playground/file.txt");
+    std::ifstream reader("path");
     if (reader) {
         while (!reader.eof()) {
             reader.get(character); // by character
