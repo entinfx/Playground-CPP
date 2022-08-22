@@ -1,11 +1,3 @@
-//
-//  memory.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/15/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include <iostream>
 #include "memory.hpp"
 #include "animal.hpp"
@@ -26,7 +18,7 @@ void memory() {
     }
 
     std::cout << std::endl;
-    
+
     /* Constant pointers and pointers to constants */
     Animal *const monkey = new Animal("Jambo", 2, "Oh-ha-ha!"); // const ptr to object
     const Animal *cat = new Animal("Toaster", 4, "Bark!"); // ptr to const object
@@ -34,7 +26,7 @@ void memory() {
     // cat->setAge(3); // error, cannot modify object
     delete monkey;
     delete cat;
-    
+
     std::cout << std::endl;
 
     /* Pass by pointer */

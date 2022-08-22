@@ -1,11 +1,3 @@
-//
-//  animal.hpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/16/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #ifndef animal_hpp
 #define animal_hpp
 

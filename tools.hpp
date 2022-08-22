@@ -1,11 +1,3 @@
-//
-//  tools.hpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/15/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #ifndef tools_hpp
 #define tools_hpp
 
@@ -30,7 +22,7 @@ int rand(int start, int end);
 template <typename T>
 void print(T data) {
     std::cout << data << std::endl;
-    
+
     // TODO: Some safety can be reached with these:
     // if (std::is_array<T>::value) /* ... */
     // if (std::is_same<T, std::string>::value) /* ... */

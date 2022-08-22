@@ -1,11 +1,3 @@
-//
-//  errors.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/15/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include <iostream>
 #include "errors.hpp"
 
@@ -20,7 +12,7 @@ void errors() {
     } catch(int n) { // catches whatever throw throws it
         std::cout << "ERROR: Cannot divide by " << n << "." << std::endl;
     }
-    
+
     /* Throw actual errors */
     bool badStuffHappened = true;
     try {

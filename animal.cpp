@@ -1,11 +1,3 @@
-//
-//  animal.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/16/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include "animal.hpp"
 
 int Animal::numberOfAnimals = 0;

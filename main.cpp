@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/7/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include <iostream>
 #include "strings.hpp"
 #include "tools.hpp"
@@ -58,7 +50,7 @@ int main(int argc, const char * argv[]) {
     alf.makeBadBoy();
     alf.goodBoyStatus();
     // runtime will delete(rex) automatically after main() is done
-    
+
     // Create Dog:Animal object in heap using Animal pointer
     Animal *rex = new Dog("Rex", 1, "Bark, Bark!");
     // since rex's actual type is Dog, but we're using an Animal
@@ -67,16 +59,16 @@ int main(int argc, const char * argv[]) {
     // makeNoise is virtual).
     rex->makeNoise();
     delete(rex);
-    
+
     /* Calculator */
 //    std::cout << calculate("(36/3)/(4*(54.3-52.3))") << std::endl; // 1.5
 
     /* Range (tools.cpp) */
 //    for (auto element: range(5, 18)) std::cout << element << std::endl;
-    
+
     /* Christmas Tree (tools.cpp) */
 //    drawChristmasTree(5);
-    
+
     /* Print (tools.cpp) */
 //    std::string string1 = "Hello, World!";
 //    std::string string2[] = { "One", "Two", "Three" };
@@ -84,7 +76,7 @@ int main(int argc, const char * argv[]) {
 //    print(string2);
 //    print(26);
 //    print('a');
-    
+
     /* Rand (tools.cpp) */
 //    srand(int(time(NULL))); // seed rand() with time
 //    for (auto i: range(0, 10)) print(rand(0, 5));

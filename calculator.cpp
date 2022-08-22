@@ -1,11 +1,3 @@
-//
-//  calculator.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/26/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include "vector"
 #include "calculator.hpp"
 
@@ -26,7 +18,7 @@ double calculate(std::string input) {
         char currentSymbol = input[i];
         int distance = 0;
         std::string bracketsContent;
-        
+
         if (isdigit(currentSymbol) || currentSymbol == '.') {
             // If next symbol is a digit - collect current.
             // Otherwise, execute operation and reset the collector.
@@ -56,7 +48,7 @@ double calculate(std::string input) {
                         // ???: Should ignore unsupported operations, but probably unsafe
                         break;
                 }
-                
+
                 operandCollector = ""; // reset operand collector
             }
         } else if (isOperation(currentSymbol)) {
@@ -64,7 +56,7 @@ double calculate(std::string input) {
         } else if (currentSymbol == '(') {
             distance = bracketDistance(i, input);
             bracketsContent = input.substr(i + 1, distance);
-            
+
             switch (pendingOperation) {
                 case '*':
                     accumulator *= calculate(bracketsContent);
@@ -85,30 +77,30 @@ double calculate(std::string input) {
 
             i += ++distance;
         }
-        
+
         std::cout << std::endl;
     }
-    
+
     return accumulator;
 }
 
 int bracketDistance(int openBracketIndex, std::string input) {
     int bracketCounter = 1;
     int closingBracketIndex = 0;
-    
+
     for (int i = ++openBracketIndex; i < input.size(); i++) {
         if (input[i] == '(') {
             bracketCounter++;
         } else if (input[i] == ')') {
             bracketCounter--;
         }
-        
+
         if (bracketCounter == 0) {
             closingBracketIndex = i;
             break;
         }
     }
-    
+
     return (closingBracketIndex - openBracketIndex);
 }
 

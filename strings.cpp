@@ -1,11 +1,3 @@
-//
-//  strings.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/7/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include <iostream>
 #include <string>
 #include "strings.hpp"

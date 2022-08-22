@@ -1,11 +1,3 @@
-//
-//  vectors.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/15/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include <iostream>
 #include <vector>
 #include <numeric>
@@ -28,7 +20,7 @@ void vectors() {
     // raysVect.pop_back();
     std::cout << raysVect.back() << std::endl; // returns last - 31.17
     std::cout << raysVect.front() << std::endl; // returns first - 10.1
-    
+
     /* std::iota */
     std::vector<int> myVec(10);
     std::iota(std::begin(myVec), std::end(myVec), 0); // std method, fills vector from certain position

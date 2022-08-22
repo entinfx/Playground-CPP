@@ -1,11 +1,3 @@
-//
-//  tools.cpp
-//  cpp_playground
-//
-//  Created by Constantine Shatalov on 10/15/18.
-//  Copyright © 2018 Hexocat. All rights reserved.
-//
-
 #include <iostream>
 #include <vector>
 #include <numeric>
@@ -36,7 +28,7 @@ void drawChristmasTree(int rowsCount) {
     // __***
     // _*****
     // *******
-    
+
     for (int i = 0; i < rowsCount; i++) {
         for (int j = 0; j < rowsCount - (i + 1); j++) std::cout << ' ';
         for (int j = 0; j < i * 2 + 1; j++) std::cout << '*';
